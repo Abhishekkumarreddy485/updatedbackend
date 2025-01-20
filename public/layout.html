@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Email Template</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    /* Email Container */
+    .email-container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Header Section */
+    .email-header {
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+    .email-header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    /* Content Section */
+    .email-content {
+      padding: 20px;
+    }
+    .email-content h2 {
+      color: #333333;
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+    .email-content p {
+      color: #555555;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 0 20px;
+    }
+
+    /* Image Section */
+    .email-image {
+      text-align: center;
+      padding: 20px;
+    }
+    .email-image img {
+      border-radius: 8px;
+    }
+
+    /* Button Section */
+    .email-button {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .email-button a {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #007bff;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .email-button a:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer Section */
+    .email-footer {
+      background-color: #f1f1f1;
+      color: #777777;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .email-footer a {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <table class="email-container">
+    <!-- Header Section -->
+    <tr>
+      <td class="email-header">
+        <h1>{{title}}</h1>
+      </td>
+    </tr>
+
+    <!-- Content Section -->
+    <tr>
+      <td class="email-content">
+        <h2>Welcome to Our Service!</h2>
+        <p>{{content}}</p>
+      </td>
+    </tr>
+
+    <!-- Image Section -->
+    <tr>
+      <td class="email-image">
+        {{imageUrls}}
+      </td>
+    </tr>
+    
+
+    <!-- Button Section -->
+    <tr>
+      <td class="email-button">
+        <a href="{{ctaUrl}}" target="_blank">Get Started</a>
+      </td>
+    </tr>
+
+    <!-- Footer Section -->
+    <tr>
+      <td class="email-footer">
+        <p>{{footer}}</p>
+        <p>
+          <a href="{{unsubscribeUrl}}">Unsubscribe</a> | 
+          <a href="{{contactUrl}}">Contact Us</a>
+        </p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
